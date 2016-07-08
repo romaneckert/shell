@@ -11,3 +11,7 @@ sh -x ./script.sh
 ./script.sh 2> /dev/null # redirect errors to nirvana
 
 ./script.sh 2>> file # redirect errors to file
+
+### Find File with string in filename
+
+find / -user username -print 2> /dev/null | grep string
